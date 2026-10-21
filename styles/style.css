@@ -9,8 +9,8 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
     width: 100%;
+    padding: 92px 50px 96px;
 }
 
 .header__links-list {
@@ -29,30 +29,31 @@
 
 .header__link {
     border-bottom: solid 1px var(--black-color);
+    padding-bottom: 2px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1em;
-    font-weight: 400;
     text-decoration: none;
 }
 
 .header__link_active {
+    font-weight: 400;
     font-size: 18px;
     line-height: 1em;
-    font-weight: 400;
     text-decoration: none;
 }
 
 .active-item {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 1;
     text-decoration: none;
 }
 
 .header__logo {
-    display: block;
-    width: 148px;  
+    display: block;  
     justify-self: center;
+    width: 148px;
  
 }
 
@@ -64,46 +65,46 @@
 .address {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
     font-weight: 400;
-    line-height: 24.3px;
+    font-size: 18px;
     font-style: normal;
+    line-height: 24.3px;
 }
 
 .header__address {
-    max-width: 240px;
-    align-items: start;
     justify-self: end;
+    align-items: start;
+    max-width: 240px;
 }
 
 .cover {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    padding: 165px 50px 50px;
-    background-image: url('/images/cover.jpg');
     min-height: 757px;
+    margin-bottom: 60px;
+    padding: 165px 50px 50px;
+    overflow: hidden;
+    background-image: url('/images/cover.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
-    margin-bottom: 60px;
 
 }
 
 .cover__title {
-    display: flex;
     position: relative;
+    z-index: 2;
+    display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 100px;
+    color: var(--white-color);
     font-weight: 700;
+    font-size: 100px;
     line-height: 115%;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: var(--white-color);
-    z-index: 2;
 
 }
 
@@ -129,40 +130,40 @@
 }
 
 .description {
-    display: flex;
-    justify-content: space-between;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .cover__description-text {
     color: var(--white-color);
-    font-size: 22px;
     font-weight: 400;
+    font-size: 22px;
     line-height: 28px;
-    text-transform: uppercase;
     letter-spacing: 0em;
+    text-transform: uppercase;
     word-spacing: 0.88em;
 }
 
 .bet-button {
-    background-color: transparent;
-    color: var(--white-color);
     border: solid 1px var(--white-color);
     padding: 12px 32px;
-    font-size: 22px;
+    color: var(--white-color);
     font-weight: 400;
+    font-size: 22px;
     line-height: 1em;
     letter-spacing: 0em;
     text-transform: uppercase;
+    background-color: transparent;
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: var(--overlay-color);
     z-index: 1;
+    background: var(--overlay-color);
 }
 
 .lots {
@@ -172,21 +173,21 @@
 }
 
 .lots__title {
-    font-size: 40px;
+    padding: 0 40px 27px ;
     font-weight: 700;
+    font-size: 40px;
     line-height: 1em;
     text-transform: uppercase;
-    padding: 0 40px 27px ;
 
 }
 
 .lots__card-list {
-    list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
     padding-bottom: 30px;
+    list-style: none;
 
 }
 
@@ -201,27 +202,27 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
     height: 100%;
     padding: 48px 40px;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 
 }
 
 .card__title {
-    z-index: 3;
     position: relative;
+    z-index: 3;
     color: var(--white-color);
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2em;
-    text-transform: uppercase;
     text-decoration: underline;
+    text-transform: uppercase;
 
 }
 .card__text {
@@ -250,21 +251,23 @@
 .lots__look-more-link {
     align-self: self-start;
     margin-left: 40px;
+    border-bottom: 1px solid var(--black-color);
+    padding-bottom: 2px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1em;
-    border-bottom: 1px solid var(--black-color);
-    padding-bottom: 2px;
     text-decoration: none;
 
 }
 
+/* about */
+
 .about {
     display: inline-grid;
-    min-height: 595px;
     grid-template-columns: 1fr 2fr;
-    padding: 0 24px;
     gap: 12px;
+    min-height: 595px;
+    padding: 0 24px;
 }
 
 .about__column {
@@ -273,22 +276,22 @@
 }
 
 .about__column-left {
-    padding-top: 35px;
     align-self: self-start;
+    padding-top: 35px;
 }
 
 .about__column-right {
-    padding-top: 138px;
     justify-content: space-between;
+    padding-top: 138px;
 }
 
 .about__logo {
-    align-self: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 240px;
+    align-items: center;
+    align-self: center;
     width: 240px;
+    height: 240px;
     border-radius: 100%;
     background-color: var(--black-color);
 }
@@ -298,8 +301,8 @@
 }
 
 .about__title {
-    font-size: 40px;
     font-weight: 700;
+    font-size: 40px;
     line-height: 1em;
     text-transform: uppercase;
 }
@@ -311,23 +314,18 @@
 }
 
 .about__text {
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
     line-height: 24px;
 }
+
+/* footer */
 
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 0 50px 82px;
 }
-
-.footer__social-list {
-    display: flex;
-    gap: 48px;
-    list-style: none;
-}
-
 
 .footer__menu-list {
     display: flex;
@@ -341,8 +339,29 @@
 }
 
 
+.footer__link {
+    border-bottom: solid 1px var(--black-color);
+    padding-bottom: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+.footer__link_active {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
 
 .footer__social-icon {
-    height: 48px;
     width: 48px;
+    height: 48px;
 }
