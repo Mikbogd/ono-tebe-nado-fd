@@ -89,7 +89,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .cover__title {
@@ -104,13 +103,11 @@
     line-height: 115%;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-
 }
 
 .aligned-text {
     display: block;
-    
-}
+    }
 
 .aligned-text_left {
     align-self: start;
