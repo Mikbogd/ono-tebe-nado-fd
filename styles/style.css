@@ -51,10 +51,10 @@
 }
 
 .header__logo {
-    display: block;  
+    display: block;
     justify-self: center;
     width: 142px;
- }
+}
 
 .header__logo-image {
   display: block;
